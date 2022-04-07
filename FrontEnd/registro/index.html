@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../global/img/Sem título.png" type="image/x-icon">
+    <title>Registro</title>
+</head>
+<body>
+
+    <header>
+        <img src="../global/img/logo.png" class="logo">
+    </header>
+
+    <div class="txt">
+        <h1>Registro</h1>
+    </div>
+
+    <div class="mid">
+        
+        <div class="form">
+            <form action="#" method="post">
+                <div>
+                    <input type="text" placeholder="Nome Completo" id="reg_nome" required>
+                    <input type="text" placeholder="CPF" id="reg_cpf" oninput="maskCPF(this)" required>
+                    <input type="email" placeholder="E-mail" id="reg_email" required>
+                    <select name="select" id="reg_cargo">
+                        <option disabled selected value="0"><p  class="caraio">Cargo</p></option>
+                        <option value="Analista de Qualidade de Vida">Analista de Qualidade de Vida</option>
+                        <option value="Assistente de Apoio Técnico">Assistente de Apoio Técnico</option>
+                        <option value="Assistente de Serviço Administrativo">Assistente de Serviço Administrativo</option>
+                        <option value="Auxiliar de Manutenção">Auxiliar de Manutenção</option>
+                        <option value="Bibliotecária">Bibliotecária</option>
+                        <option value="Coordenador de Atividades Técnicas">Coordenador de Atividades Técnicas</option>
+                        <option value="Coordenador de Relacionamento Com a Industria">Coordenador de Relacionamento Com a Industria</option>
+                        <option value="Diretor de Unidade de Formação Profissional">Diretor de Unidade de Formação Profissional</option>
+                        <option value="Gerente Administrativo Financeiro">Gerente Administrativo Financeiro</option>
+                        <option value="Instrutor de Formação Profissional">Instrutor de Formação Profissional</option>
+                        <option value="Oficial de Manutenção">Oficial de Manutenção</option>
+                        <option value="Orientador de Prática Profissional">Orientador de Prática Profissional</option>
+                        <option value="Professor CAI e CT">Professor CAI e CT</option>
+                    </select>
+                    
+                </div>
+                <div>
+                    <input type="text" placeholder="Telefone" id="tel" maxlength="15" required>
+                    <input type="password" placeholder="Senha" id="reg_pw1" required minlength="8">
+                    <input type="password" placeholder="Confirme a senha" id="reg_pw2" required>
+                    <input type="file" id="avatar" data-content="Selecione a foto" accept="image/png, image/jpg, image/jpeg">
+                </div>
+                
+            </form>
+        </div>
+    
+        <div class="div_btn">
+            <button type="submit" id="btn" onclick="registro()">Registrar</button>
+            <button type="button" id="btn" onclick="backpg()">Voltar</button>
+        </div>
+    </div>
+    
+</body>
+<script src="../global/md5.js"></script>
+<script src="../global/global.js"></script>
+<script src="script/script.js"></script>
+</html>

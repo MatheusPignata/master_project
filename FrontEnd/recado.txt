@@ -1,0 +1,13 @@
+<option label="Analista de Qualidade de Vida" value="Analista de Qualidade de Vida"/>
+<option label="Assistente de Apoio Técnico" value="Assistente de Apoio Técnico"/>
+<option label="Assistente de Serviço Administrativo" value="Assistente de Serviço Administrativo"/>
+<option label="Auxiliar de Manutenção" value="Auxiliar de Manutenção"/>
+<option label="Bibliotecária" value="Bibliotecária"/>
+<option label="Coordenador de Atividades Técnicas" value="Coordenador de Atividades Técnicas"/>
+<option label="Coordenador de Relacionamento Com a Industria" value="Coordenador de Relacionamento Com a Industria"/>
+<option label="Diretor de Unidade de Formação Profissional" value="Diretor de Unidade de Formação Profissional"/>
+<option label="Gerente Administrativo Financeiro" value="Gerente Administrativo Financeiro"/>
+<option label="Instrutor de Formação Profissional" value="Instrutor de Formação Profissional"/>
+<option label="Oficial de Manutenção" value="Oficial de Manutenção"/>
+<option label="Orientador de Prática Profissional" value="Orientador de Prática Profissional"/>
+<option label="Professor CAI e CT" value="Professor CAI e CT"/>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../global/img/Sem título.png" type="image/x-icon">
+    <title>Agenda</title>
+</head>
+<body>
+
+    <header>
+        <img src="../global/img/logo.png" class="logo">
+    </header>
+
+    <div class="meio">
+
+        <div class="conteudo">
+
+            <div class="inputs">
+                <form action="#" method="post">
+                    <select name="turma" id="select1">
+                        <option disabled selected value="0"><p>Curso</p></option>
+                    </select>
+                    <select name="sala" id="select2">
+                        <option disabled selected value="0"><p>Ambiente</p></option>
+                    </select>
+                    <input placeholder="Data Inicial" type="text" id="dataInicial" oninput="maskDate(this)">
+                    <input placeholder="Data Final" type="text" id="dataFinal">
+                </form>
+            </div>
+
+            <div class="lista">
+                <div class="checkboxes">
+                    <span class="check model"><input type="radio" name="compo"><label>Componente</label></span>
+                    
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="div_btn">
+        <button type="button" id="btn" onclick="test()">Cadastrar turma</button>
+        <button type="button" id="btn" onclick="limparCampos()" class="csv" style="display: none">Limpar Campos</button>
+        <button type="button" id="btn" onclick="backpg()">Voltar</button>
+    </div>
+    
+    
+</body>
+<script src="../global/md5.js"></script>
+<script src="../global/global.js"></script>
+<script src="script/script.js"></script>
+</html>

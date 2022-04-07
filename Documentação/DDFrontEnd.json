@@ -1,0 +1,164 @@
+// Dicionario de dados FrontEnd ( projeto Masters )
+
+
+//Enviado pelo FrontEnd ( Pagina login )
+{
+    "cpf": "24516263",
+    "senha": "senha"
+}
+//Recebera de voltaFront End ( Pagina login )
+{
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+    "email": "josesilva@gmail.com",
+    "telefone": "(19) 12516-2632",
+    "cargo": "Professor",
+    "foto": "base64",
+    "resetsenha": false
+}
+
+// Enviado pelo FrontEnd ( Pagina do usuario ) Update de informações
+{
+    "id": 1,
+    "telefone": "(15) 21285-2528",
+    "email": "josesilva267@gmail.com",
+}
+// Recebera de volta no FrontEnd ( Pagina do usuario ) Update de informações
+{
+    "id": 1,
+    "telefone": "(15) 21285-2528",
+    "email": "josesilva267@gmail.com",
+}
+
+// Enviado pelo FrontEnd ( Pagina de registro )
+{
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+    "email": "josesilva@gmail.com",
+    "telefone": "(19) 12516-2632",
+    "cargo": "Professor",
+    "foto": "base64",
+    "senha": "37fgu58fgf4ss8",
+    "cargaHoraria": 20,
+    "formacao": "TI em geral"
+}
+// Recebera de volta no FrontEnd ( Pagina de registro )
+{
+    "status": 200 || { "msg": "registrado"}
+}
+
+// Envia pelo FrontEnd ( Pagina de funcionarios )
+{
+    link do back
+}
+//Recebera de volta no FrontEnd ( Pagina de funcionarios )
+{
+    "id": 1,
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+}
+// Enviara pelo FrontEnd ( Pagina de funcionarios )
+{
+    "id": 1,
+    "senha": "123456789",
+}
+//Recebera de volta no FrontEnd ( Pagina de funcionarios )
+{
+    "status": 200 || { "msg": "alterado"}
+}
+
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Componente GET
+{
+
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Componente GET
+{
+    id: 1,
+    materia: "FPOO",
+    carga_horaria: 150
+}
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Componente POST
+{
+    materia: "SOP",
+    carga_horaria: 75
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Componente POST
+{
+    id: 3,
+    materia: "SOP",
+    carga_horaria: 75
+}
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Componente PUT
+{
+    Query: "&id=1",
+    materia: "FPOO",
+    carga_horaria: 300
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Componente PUT
+{
+    id: 1,
+    materia: "FPOO",
+    carga_horaria: 300
+}
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Componente Delete
+{
+    Query: "&id=1",
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Componente Delete
+{
+    HTTPStatus: 410
+}
+
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Ambiente GET
+{
+
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Ambiente GET
+{
+    id: 1,
+    capacidade: 30,
+    tipoAmbiente: {
+        id: 1,
+        tipo: "Laboratorio"
+    }
+}
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Ambiente POST
+{
+	id_tipo : 1,
+	capacidade : 30
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Ambiente POST
+{
+	id: 1,
+	id_tipo: 1,
+	capacidade: 30
+}
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Ambiente PUT
+{
+    Query: "&id=1",
+    id_tipo: 2,
+    capacidade: 20
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Ambiente PUT
+{
+    id: 1,
+    id_tipo: 2,
+    capacidade: 20
+}
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) Ambiente Delete
+{
+    Query: "&id=1",
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral ) Ambiente Delete
+{
+    HTTPStatus: 410
+}
+
+// Enviara pelo FrontEnd ( Pagina de CadastroGeral ) 
+{
+
+}
+//Recebera de volta no FrontEnd ( Pagina de CadastroGeral )
+{
+    
+}

@@ -1,0 +1,243 @@
+.meio{
+    display: flex;
+    height: 92.2vh;
+}
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    border-right: 10px solid var(--p-color);
+}
+
+.filter{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+.filter span{
+    display: flex;
+    margin: 5px 15px;
+    align-items: center;
+    color: var(--p-color);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.filter input{
+    margin: 0;
+    margin-right: 10px;
+    padding: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    appearance: none;
+    background-color: var(--p-color);
+    border: 2px solid var(--p-color);
+    cursor: pointer;
+}
+
+.filter input:checked{
+    border: 5px solid var(--p-color);
+    background-color: #fff;
+}
+
+.cadastro h1{
+    color: var(--p-color);
+    border-bottom: 2px solid var(--p-color);
+    padding: 0 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn_add{
+    margin-bottom: 20px;
+}
+
+.lista{
+    width: 70%;
+}
+
+.pesquisa{
+    padding: 50px 50px 70px;
+}
+
+.table{
+    height: 69.2vh;
+    overflow-y: auto;
+    align-self: center;
+}
+
+.table::-webkit-scrollbar{
+    width: 15px;
+}
+
+.table::-webkit-scrollbar-track {
+    background: #999;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+
+.table::-webkit-scrollbar-thumb {
+    background: var(--p-color);
+    border-radius: 6px;
+}
+
+table{
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    align-self: center;
+}
+
+table tr{
+    text-align: left;
+}
+
+table td{
+    padding: 10px;
+    text-align: center;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even){
+    background-color: #E7E7E7;
+}
+
+table th{
+    padding: 10px 0;
+    border-top: 2px solid var(--p-color);
+}
+
+.title1{
+    text-align: center;
+}
+
+.info1{
+    width: 20%;
+}
+
+.info2{
+    width: 50%;
+    text-align: left;
+}
+
+#btn{
+    font-size: 20px;
+}
+
+.select{
+    display: none;
+}
+
+.curso_cad{
+    flex-direction: column;
+    justify-content:center;
+}
+
+.select_curso{
+    margin-bottom: 0 !important;
+}
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square{
+    width: 50%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.square>span{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.square>span>img{
+    width: 30px;
+}
+
+.checkboxes{
+    align-items: flex-start;
+    display: flex;
+    max-height: 85%;
+    width: 98%;
+    margin-top: 10%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+.checkboxes::-webkit-scrollbar{
+    width: 15px;
+}
+
+.checkboxes::-webkit-scrollbar-track {
+    background: #999;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+
+.checkboxes::-webkit-scrollbar-thumb {
+    background: var(--p-color);
+    border-radius: 6px;
+}
+
+.checkboxes span{
+    width: 33.33%;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.checkboxes input[type=checkbox]{
+    padding: 0;
+    margin: 15px 30px;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    border: 2px solid var(--p-color);
+    cursor: pointer;
+}
+
+.checkboxes input:checked{
+    background-color: #FFF;
+    border: 7px solid var(--p-color);
+}
+
+.model{
+    display: none !important;
+}

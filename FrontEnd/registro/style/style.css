@@ -1,0 +1,51 @@
+.mid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -50px;
+}
+
+#avatar{
+    border: none;
+    padding: 0;
+}
+
+#avatar::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#avatar::before {
+    content: attr(data-content);
+    display: inline-block;
+    background: #fff;
+    border: 2px solid var(--p-color);
+    border-radius: 3px;
+    padding: 15px 0px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    color: var(--p-color);
+    font-weight: 700;
+    width: 19.8vw;
+    text-align: center;
+}
+
+#avatar:hover::before {
+    transition: .4s;
+    background: var(--p-color);
+    color: #fff;
+}
+
+#avatar:active::before {
+    background: rgba(255, 0, 0, 0.4);
+}
+
+.div_btn {
+    flex-direction: column;
+    width: 10vw;
+}
+
+#btn {
+    margin-top: 20px;
+}

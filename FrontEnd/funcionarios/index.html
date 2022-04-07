@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../global/img/Sem título.png" type="image/x-icon">
+    <title>Funcionarios</title>
+</head>
+<body>
+    
+    <header>
+        <img src="../global/img/logo.png" class="logo">
+    </header>
+
+    <div class="txt">
+        <h1>Funcionarios</h1>
+    </div>
+
+    <div class="pesquisa">
+        <input type="search" id="busca" placeholder="Buscar por nome ou CPF..." onkeyup="buscar()">
+        <button type="button" id="btn" onclick="backpg()">Voltar</button>
+    </div>
+
+    <div class="table">
+        <table cellspacing="0">
+            <tbody class="list">
+                <tr class="user model">
+                    <td class="cpf"></td>
+                    <td class="nome"></td>
+                    <td class="id" style="display: none"></td>
+                    <td><button class="btn_reset" onclick="reset(this)">Redefinir Senha</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+
+</body>
+<script src="../global/global.js"></script>
+<script src="script/script.js"></script>
+</html>

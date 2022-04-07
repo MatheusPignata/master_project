@@ -1,0 +1,7 @@
+npm i mysql2 sequelize dotenv express
+npm i express
+npm i nodemon
+npm i cors
+npm i
+
+link de estudo: https://www.youtube.com/watch?v=i57XjELinik

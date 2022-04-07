@@ -1,0 +1,79 @@
+// Dicionario de dados Mobile ( projeto Masters )
+
+
+//Enviado pelo FrontEnd ( Pagina login )
+{
+    "cpf": "24516263",
+    "senha": "senha"
+}
+//Recebera de volta no Front End ( Pagina login )
+{
+    "id": 1,
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+    "email": "josesilva@gmail.com",
+    "telefone": "(19) 12516-2632",
+    "cargo": "Professor",
+    "foto": "base64",
+    "resetsenha": false
+}
+
+// Enviado pelo FrontEnd ( Pagina do usuario ) Update de informações
+{
+    "id": 1,
+    "telefone": "(15) 21285-2528",
+    "email": "josesilva267@gmail.com",
+}
+// Recebera de volta no FrontEnd ( Pagina do usuario ) Update de informações
+{
+    "id": 1,
+    "telefone": "(15) 21285-2528",
+    "email": "josesilva267@gmail.com",
+}
+
+//Recebera de volta no FrontEnd ( Pagina do usuario )
+{
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+    "email": "josesilva@gmail.com",
+    "telefone": "(19) 12516-2632",
+    "cargo": "Professor",
+    "foto": "base64",
+}
+
+// Enviado pelo FrontEnd ( Pagina de registro )
+{
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+    "email": "josesilva@gmail.com",
+    "telefone": "(19) 12516-2632",
+    "cargo": "Professor",
+    "foto": "base64",
+    "senha": "37fgu58fgf4ss8",
+    "cargaHoraria": 20,
+    "formacao": "TI em geral"
+}
+// Recebera de volta no volta ( Pagina de registro )
+{
+    "status": 200 || { "msg": "registrado"} || {"informações cadastradas"}
+}
+
+// Envia pelo FrontEnd ( Pagina de funcionarios )
+{
+    link do back
+}
+//Recebera de volta no FrontEnd ( Pagina de funcionarios )
+{
+    "id": 1,
+    "cpf": "352.353.255-31",
+    "nome": "José da silva",
+}
+// Enviara pelo FrontEnd ( Pagina de funcionarios )
+{
+    "id": 1,
+    "senha": "123456789",
+}
+//Recebera de volta no FrontEnd ( Pagina de funcionarios )
+{
+    "status": 200 || { "msg": "alterado" }
+}

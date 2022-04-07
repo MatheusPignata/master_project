@@ -1,0 +1,159 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.space{
+    height: 20vh;
+}
+
+.meio{
+    background-color: #E7E7E7;
+    height: 71.4vh;
+    width: 99.4vw;
+    border-radius: 20px;
+}
+
+container{
+    display: flex;
+    width: 100%;
+    height: 86%;
+}
+
+.user{
+    display: flex;
+}
+
+.user img{
+    width: 200px;
+    margin: -120px 0 0 110px;
+    border: 4px solid #E7E7E7;
+    background-color: #E7E7E7;
+}
+
+.user h3{
+    margin: -50px 0 0 20px;
+    font-size: 34px;
+}
+
+.fields{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    justify-content: space-between;
+    padding: 20px 0 0 20px;
+}
+
+.fields span{
+    display: flex;
+    border-bottom: 2px solid var(--p-color);
+    width: 20vw;
+    justify-content: space-between;
+}
+
+.fields span h2{
+    color: var(--p-color);
+    margin-bottom: 15px;
+}
+
+.fields span div{
+    display: flex;
+    align-items: center;
+}
+
+.campo_cpf{
+    width: 10vw;
+    background-color: transparent;
+    border: none !important;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.bi-eye-slash{
+    cursor: pointer;
+}
+
+.fields form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    margin: 10px 0;
+}
+
+#btn{
+    width: 20vw;
+}
+
+.top_btns{
+    display: flex;
+    width: 20vw;
+    justify-content: space-between;
+}
+
+.top_btns button{
+    width: 9.4vw !important; 
+}
+
+.bottom_btns{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 280px;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15%;
+}
+
+.filter h2{
+    color: var(--p-color);
+    border-bottom: 2px solid var(--p-color);
+}
+
+.filter div{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0;
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+.filter div span{
+    display: flex;
+    margin: 5px 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.filter div input{
+    padding: 0;
+    margin-left: 10px;
+    -webkit-appearance: none;
+    border: 5px solid #fff;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filter div input:checked{
+    background-color: var(--p-color);
+    border: 5px solid #fff;
+}
+
+.schedule{
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 20px;
+    width: 45%;
+}

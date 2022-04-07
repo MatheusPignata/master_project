@@ -1,6 +1,7 @@
 mobile/node_modules/
 mobile/.expo/
 mobile/dist/
+BackEnd/node_modules
 npm-debug.*
 *.jks
 *.p8

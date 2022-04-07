@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="shortcut icon" href="../global/img/Sem título.png" type="image/x-icon">
+    <title>Usuario</title>
+</head>
+<body>
+
+    <header>
+        <img src="../global/img/logo.png" class="logo">
+    </header>
+
+    <div class="space"></div>
+    
+    <div class="meio">
+        <div class="info">
+            <div class="user">
+               <img src="" id="avatar">
+               <h3>Fulano de Tal</h3>
+            </div>
+        </div>
+        <container>
+            <div class="fields">
+                <span>
+                    <h2>CPF</h2>
+                    <div>
+                        <input type="password" class="campo_cpf" >
+                        <i class="bi bi-eye-slash" id="togglePassword" onclick="pwReview(this)"></i>
+                    </div>
+                </span>
+                <form method="post">
+                    <input type="email" id="user_email">
+                    <input type="text" id="tel" maxlength="15">
+                </form>
+                <div class="top_btns">
+                    <button type="submit" id="btn" class="btn_save" onclick="update()">Salvar</button>
+                    <button type="submit" id="btn" class="btn_exit" onclick="sair()">Sair</button>
+                </div>
+                <div class="bottom_btns">
+                    <button type="submit" id="btn" class="btn_cadastro" onclick="cadastro()">Cadastro Geral</button>
+                    <button type="submit" id="btn" class="btn_agenda" onclick="agenda()">Agenda</button>
+                    <button type="submit" id="btn" class="btn_resetPw" onclick="funcionarios()">Redefinir Senha</button>
+                    <button type="submit" id="btn" class="btn_new_user" onclick="register()">Registrar Novo Usuario</button>
+                </div>
+            </div>
+            <div class="filter">
+                <h2>Filtros</h2>
+                <div>
+                    <span><label>Todos</label><input type="radio" name="filter"></span>
+                    <span><label>Para Amanhã</label><input type="radio" name="filter"></span>
+                    <span><label>Minhas Reservas</label><input type="radio" name="filter"></span>
+                </div>
+            </div>
+            <div class="schedule">
+
+            </div>
+        </container>
+        
+    </div>
+
+</body>
+<script src="../global/global.js"></script>
+<script src="script/script.js"></script>
+</html>

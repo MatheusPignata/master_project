@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../global/img/Sem título.png" type="image/x-icon">
     <title>Login</title>
 </head>
 <body>
 
     <header>
-        <img src="../global/img/senai.svg" class="logo">
+        <img src="../global/img/logo.png" class="logo">
     </header>
+
+    <div class="dm">
+        <input type="checkbox" id="btn_dm" name="btn_dm">
+    </div>
 
     <div class="txt">
         <h1>Login</h1>
@@ -19,16 +25,18 @@
 
     <div class="form">
         <form method="post">
-            <input type="text" placeholder="CPF" id="cad_cpf" oninput="maskCPF(this)" required>
-            <input type="password" placeholder="Senha" id="log_senha" onkeyup="setPw(this)">
+            <input type="text" placeholder="CPF" id="log_cpf" oninput="maskCPF(this)" required>
+            <input type="password" placeholder="Senha" id="log_senha" >
         </form>
     </div>
 
     <div class="div_btn">
-        <button type="submit" id="btn_login" onclick="login()">Login</button>
+        <button type="button" id="btn" onclick="login()">Login</button>
     </div>
     
     
 </body>
+<script src="../global/md5.js"></script>
+<script src="../global/global.js"></script>
 <script src="script/script.js"></script>
 </html>

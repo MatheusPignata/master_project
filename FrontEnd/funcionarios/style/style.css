@@ -1,0 +1,83 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.pesquisa{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.table{
+    width: 98%;
+    height: 45vh;
+    overflow-y: auto;
+    align-self: center;
+}
+
+.table::-webkit-scrollbar{
+    width: 15px;
+}
+
+.table::-webkit-scrollbar-track {
+    background: #999;
+    border: 3px solid #fff;
+    border-radius: 6px;
+}
+
+.table::-webkit-scrollbar-thumb {
+    background: var(--p-color);
+    border-radius: 6px;
+}
+
+table{
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    align-self: center;
+}
+
+table tr{
+    text-align: left;
+}
+
+table td{
+    padding: 10px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+
+tbody tr:nth-child(even){
+    background-color: #E7E7E7;
+}
+
+.model{
+    display: none;
+}
+
+.cpf{
+    text-align: center;
+}
+
+.nome{
+    width: 70%;
+}
+
+.btn_reset{
+    background-color: var(--p-color);
+    color: #fff;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 7px 0px rgba(0,0,0,0.3);
+}
+
+.btn_reset:active{
+    background-color: rgb(199, 0, 0);
+    transform: translateY(2px);
+}

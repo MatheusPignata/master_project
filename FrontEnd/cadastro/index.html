@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../global/global.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="../global/img/Sem título.png" type="image/x-icon">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <img src="../global/img/logo.png" class="logo">
+    </header>
+
+    <div class="model modal">
+        <div class="square">
+            <span id="closeModal" onclick="closeModal()">
+                <img src="https://cdn-icons-png.flaticon.com/512/106/106830.png" />
+            </span>
+            <div class="checkboxes">
+                <span class="check model"><input type="checkbox" name="compo"><label>Componente</label></span>
+            </div>
+        
+        </div>
+    </div>
+
+    <div class="meio">
+        <div class="cadastro">
+            
+            <div>
+                <div class="filter">
+                    <span><input type="radio" name="filter" id="compo" onclick="componente()"><label>Componente</label></span>
+                    <span><input type="radio" name="filter" id="amb" onclick="ambiente()"><label>Ambiente</label></span>
+                </div>
+                <div class="filter">
+                    <span><input type="radio" name="filter" id="curso" onclick="curso()"><label>Curso</label></span>
+                    <span><input type="radio" name="filter" id="turm" onclick="turma()"><label>Turma</label></span>
+                </div>
+            </div>
+
+            <h1>Registrar</h1>
+
+            <div class="campos">
+                <form action="#" method="post">
+                    <input type="text" id="dado1" required>
+                    <select name="select" id="select">
+                        <option disabled value="0" selected><p  class="disable">Tipo do Ambiente</p></option>
+                        <option value="1">Sala</option>
+                        <option value="2">Laboratório</option>
+                        <option value="3">Oficina</option>
+                    </select>
+                    <input type="number" id="dado2" required>
+                </form>
+            </div>
+
+            <div class="curso_cad" style="display: none;">
+                <form action="#" method="post">
+                <select name="select" id="select_curso" style="margin-bottom: 50px;">
+                    <option disabled value="0" selected><p  class="disable">Selecionar Curso</p></option>
+                </select>
+                    <input type="text" id="dado3" required>
+                </form>
+                <button id="btn" class="btn_modal" onclick="openModal()">Selecionar Matérias</button>
+            </div>
+
+            <div class="button">
+                <button type="submit" id="btn" class="btn_add">Adicionar</button>
+                <button type="button" id="btn" onclick="backpg()">Voltar</button>
+            </div>
+
+        </div>
+
+        <div class="lista">
+
+            <div class="pesquisa">
+                <input type="search" id="busca" placeholder="Buscar..." onkeyup="buscar()">
+            </div>
+
+            <div class="table">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th class="title1"></th>
+                            <th class="title2" colspan="3"></th>
+                        </tr>
+                    </thead>
+                    <tbody class="list">
+                        <tr class="user model">
+                            <td class="info1"></td>
+                            <td class="info2"></td>
+                            <td class="misterM" style="display:none"></td>
+                            <td><button id="btn" class="btn_edit">Editar</button></td>
+                            <td><button id="btn" class="btn_exclude">Excluir</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    
+    </div>
+    
+</body>
+<script src="../global/global.js"></script>
+<script src="script/script.js"></script>
+</html>
