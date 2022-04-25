@@ -1,5 +1,18 @@
 const usuario = require ('../model/usuario');
 
+// const createuser = await usuarios({
+//     nome: 'Admin',
+//     telefone: '(19)9.1111-2222',
+//     cargo: "Administrador",
+//     email: 'admin@senai.com',
+//     senha: '7488e331b8b64e5794da3fa4eb10ad5d',
+//     foto: '',
+//     cpf: '111.222.333-44',
+//     resetsenha: true,
+//     carga_horaria: 45,
+//     formacao: 'Superior'
+// })
+
 const create = async (req, resp) => {
     const data = req.body;
     let ret = [];
@@ -99,6 +112,7 @@ const loginmobile = async (req, res) => {
 }
 
 module.exports = {
+    //createuser,
     create,
     read,
     update,
